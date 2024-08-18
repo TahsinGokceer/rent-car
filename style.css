@@ -29,6 +29,8 @@ body {
 ul{
     display: flex;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 ul li{
@@ -176,4 +178,36 @@ a{
 
 .car-feature p span{
     margin-right: 5px;
+}
+
+@media(max-width: 768px){
+    .nav-title{
+        font-size: 1.5rem;
+    }
+    .nav-container ul{
+        margin: 0;
+        padding: 0;
+    }
+    .nav-container ul li{
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container p{
+        font-size: 1rem;
+    }
+    .container .btn{
+        margin-bottom: 5rem;
+    }
+    .cards{
+        flex-direction: column;
+        margin: 10rem auto 0rem;
+
+    }
+    .card{
+        font-size: 2rem;
+
+    }
 }
